@@ -1,14 +1,26 @@
-   document.getElementById('download').addEventListener('click', function() {
+     document.getElementById('generate-and-send').addEventListener('click', async function() {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
             const pdfFileName = 'archivo.pdf';
 
             doc.text('Hola, este es un archivo PDF.', 10, 10);
-            doc.save(pdfFileName);
+            const pdfData = doc.output('blob');
 
-            // Enlace para enviar por WhatsApp
-            const fileUrl = 'URL_DEL_PDF_SUBIDO'; // Cambia esto por la URL del archivo PDF subido
-            const whatsappLink = `https://api.whatsapp.com/send?text=Aquí tienes tu archivo PDF: ${fileUrl}`;
-            document.getElementById('whatsapp-link').href = whatsappLink;
-            document.getElementById('whatsapp-link').style.display = 'block';
+            // Subir el PDF a un servidor
+            const formData = new FormData();
+            formData.append('file', pdfData, pdfFileName);
+
+            // Cambia la URL a tu servidor donde procesarás la subida
+            const response = await fetch('TU_URL_DEL_SERVIDOR', {
+                method: 'POST',
+                body: formData,
+            });
+            
+            if (response.ok) {
+                const fileUrl = await response.text(); // Obtener la URL del archivo subido
+                const whatsappLink = `https://api.whatsapp.com/send?text=Aquí tienes tu archivo PDF: ${fileUrl}`;
+                window.open(whatsappLink, '_blank'); // Abrir WhatsApp con el enlace
+            } else {
+                alert('Error al subir el archivo.');
+            }
         });
