@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Ingreso Escolar</title>
+    <link rel="stylesheet" href="solicitud.css"> <!-- Archivo CSS externo -->
+</head>
+<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+   <section></section>
+    <form id="school-application-form">
+        <h2>Formulario de Solicitud</h2>
+        <br>
+        <label for="name">Nombre del estudiante:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Escribe tu dirección completa" required>
+<br>
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+        <!-- Ciudad -->
+
+        <label for="grade">Grado que desea ingresar:</label>
+        <select id="grade" name="grade" required>
+            <option value="kinder">Kinder</option>
+            <option value="primaria">Pre-kinder</option>
+            <option value="secundaria">Primaria</option>
+        </select><br><br>
+
+        <label for="message">Mensaje adicional:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <br>
+        <button class="btn-back" onclick="history.back()">
+            <span class="arrow">←</span><center> Volver atrás</center>
+        </button>
+<br>
+        <a href="https://web.whatsapp.com/send?phone=8493902229&text=archivo,%20aquí%20tienes%20el%20archivo:%20https://www.ejemplo.com/miarchivo.pdf" target="_blank"></a><button type="submit"> Enviar solicitud</button></a>
+        
+    </form>
+
+    <p id="response-message"></p>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="solicitud.js"></script> <!-- Archivo JavaScript externo -->
+</body>
+</html>

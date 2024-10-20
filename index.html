@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Socio Educativo Madre Asunción</title>
+   <link rel="stylesheet" href="centro.css">
+   <link rel="icon" href="images/logo-4.ico">
+   <link rel="stylesheet" href="solicitud.js">
+
+</head>
+<body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+   
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo-4.png" alt="Logo de la marca">
+            </div>
+            <nav>
+               <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="admisiones.html">Admisiones</a></li>
+                    <li><a href="doocentes.html">docentes</a></li>
+                    <li><a href="actividades.html">actividades</a></li>
+                    
+
+
+               </ul>            
+            </nav>
+  
+        </header>
+
+
+   
+        <div class="video-container">
+            <video autoplay muted loop id="portadaVideo">
+                <source src="Diseño sin título.mp4" type="video/mp4">
+           
+            </video>
+            <div class="overlay">
+                
+            </div>
+        </div>
+    <section class="container-fluid" id="nosotros">
+        <div class="row">
+          <div class="col" id="card">
+       
+ <center><h1>Acerca De Nosotros</h1></center>
+  <center> 
+    <button onclick="showInfo('info1')">Quiènes somos</button>
+    <button onclick="showInfo('info3')">Misiòn</button>
+    <button onclick="showInfo('info2')">Visiòn</button>
+  </center> 
+ 
+      <div id="info1" class="info">
+        <p>El Centro Socio Educativo Madre Asunción es una Institución  Educativa, sin fines de lucro, ubicada en el corazón del Caliche del barrio Mejoramiento social, al noroeste de la ciudad de Santo Domingo, República Dominicana.
+
+            Se fundó el 13 de octubre de 1983 para dar respuesta a las necesidades de promoción social y educación de este sector marginal.
+            
+            Inició con pequeño local destinado a la educación maternal y a la alfabetización nocturna de adultos.
+            
+            Actualmente es una linda escuela de educación inicial y primaria</p>
+    </div>
+
+
+    <div id="info3" class="info">
+        <p>Nuestra institución tiene como tarea fundamental favorecer una educación integral, de excelencia que prepare para la vida y una vida feliz. Desarrollará todas las dimensiones de la persona  tomando en cuenta sus necesidades, prioridades y diferencias individuales. Ofrecerá a sus alumnos  las herramientas necesarias para asumir las circunstancias históricas y abrirse al futuro.
+
+            Nos planteamos la formación de estudiantes competentes, preparados para  desarrollar sus propios proyectos personales de vida, para ser felices, con valores éticos y religiosos, con gran capacidad de comunicación, de análisis, reflexivos, críticos , creativos, investigadores, capaces de afrontar los diferentes retos científicos y tecnológicos,  aptos para pensar en sí mismos, en los demás y en su entorno, seguros de tomar sus propias decisiones,  generadores de cambios significativos que contribuyan a humanizar  la sociedad.</p>
+    </div>
+    <div id="info2" class="info">
+        <p>Contribuimos al desarrollo cultural de nuestro tiempo, implicándonos en la comunidad local, cultivando valores que promueven el crecimiento integral de   toda la comunidad educativa y entorno.
+
+            Somos una gran familia educativa donde prevalece un ambiente  armónico y fraterno, en el que  cada uno de sus  miembros se siente acogido, querido, respetado, valorado, comprendido; donde es posible trabajar en  equipo y delinear juntos las distintas acciones que nos permiten operativizar el proyecto educativo del Centro.
+            
+            Promovemos en  nuestros alumnos un  aprendizaje significativo que los capacita para la vida y una vida feliz en plenitud.
+            
+            Favorecemos procesos de crecimiento humano y espiritual en toda la comunidad educativa en torno al propio proyecto personal de vida.
+            
+            Somos un centro educativo  que marca la diferencia, incidiendo positivamente en el desarrollo sociocultural de nuestro entorno.</p>
+    </div>
+    <div id="info3" class="info">
+        <p>El Centro Socio Educativo Madre Asunción es una Institución  Educativa, sin fines de lucro, ubicada en el corazón del Caliche del barrio Mejoramiento social, al noroeste de la ciudad de Santo Domingo, República Dominicana.
+
+            Se fundó el 13 de octubre de 1983 para dar respuesta a las necesidades de promoción social y educación de este sector marginal.
+            
+            Inició con pequeño local destinado a la educación maternal y a la alfabetización nocturna de adultos.
+            
+            Actualmente es una linda escuela de educación inicial y primaria</p>
+    </div>
+
+
+    <script>
+        function showInfo(id) {
+            // Ocultar todas las informaciones
+            const infos = document.querySelectorAll('.info');
+            infos.forEach(info => info.style.display = 'none');
+
+            // Mostrar la información seleccionada
+            const infoToShow = document.getElementById(id);
+            if (infoToShow) {
+                infoToShow.style.display = 'block';
+            }
+        }
+
+        function hideAll() {
+            const infos = document.querySelectorAll('.info');
+            infos.forEach(info => info.style.display = 'none');
+        }
+    </script>
+    </section>
+    </section>
+    <section>
+        <center><h1>Valores y Actitudes</h1></center>
+       <center> <div class="contenedor">
+        
+                <ul>
+              <li>Ciudado con la vida</li>
+
+       <li> Amor a la familia</li>
+               
+     <li>   Cuidado de la naturaleza </li>
+                
+    <li>Admiraciòn/contemplaciòn</li> 
+             
+   <li> Acogida</li>
+    </ul>
+    
+                </p>
+       <ul>
+              <li> Responsabilidad</li>
+           
+             <li>  Esfuerzo/superaciòn </li>
+         
+             <li>  Sentido de justicia</li>
+          
+             <li>  Sinceridad</li>                                  
+                        <li>  Intuiciòn</li>
+           
+               
+            </ul>
+            </p>
+        <ul>
+           <li>Fraternidad/hermandad</li> 
+            
+           <li> Solidarida</li>
+            
+          <li>  Honestidad</li>
+            
+           <li> Creatividad</li>
+        
+           <li> Servicio</li>
+           </ul>
+            </p>
+       </center>
+        </div>
+    </section>
+<section>
+      <div class="gallery-container">
+    <center>   <h1>Galería de Imágenes </h1></center> 
+        <div class="gallery">
+            <div class="gallery-item">
+            <img src="images/image.png"/>
+                <div class="text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image copy.png"/>
+                <div class="text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/4.png"/>
+                <div class="text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/2.png"/>
+                <div class="text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/3.png"/>
+                <div class="text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image copy 2.png"/>
+                <div class="text"> </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+        <!-- Sección de contacto -->
+        <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p>Teléfono:809-682-1238 </p>
+            <p>Email: colegiomadreasuncion@hotmail.com</p>
+            <p>Dirección: Calle Domingo Moreno Jimenez#50 mejoramiento sociál </p>
+        </div>
+        <!-- Sección de enlaces útiles -->
+        <div class="footer-section links">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+        <!-- Sección de redes sociales -->
+        <div class="footer-section social">
+            <h3>Síguenos</h3> <br>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a> <br>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a> <br>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+            <img src="image copy 24.png" alt="">
+        </div>
+    
+   
+    <div class="footer-bottom">
+
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5ebc1;
+}
+
+/* Encabezado */
+header {
+    background: #f5ebc1;
+    color: #000000;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 10px 9%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+    font-size: 20px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+
+}
+
+.header .nav-links a{
+    font-size: 800;
+    color: #e7b24f;
+    text-decoration: none;
+
+}
+
+.header .nav-links li a:hover{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+
+/* Tarjetas */
+.card-section {
+    padding: 2rem 0;
+    cursor: po;
+ 
+}
+
+.card {
+    background: #f7f1dd;;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)213, 0.1;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body h3 {
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.card-body p {
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.card-body .btn {
+    background: #e7b24f;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-body .btn:hover {
+    background: #f3d655;
+}
+
+/* Sección de contacto */
+address {
+    margin-top: 1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    color: #f39c12;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin: 15px 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, 
+.footer-section a, 
+.footer-section ul {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #030303;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+
+.lia{
+    padding: 2rem 0;
+    cursor: po;
+}
+ .lia img{
+width: 260px;
+height: 260px;
+display: block; 
+margin-left: auto; 
+margin-right: auto;
+width: 300px;
+ }
+
+.lia h1{
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ebc1;
+    margin: 0;
+    padding: 20px;
+}
+
+.sugerencias {
+    background-color: #f5ebc1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto; /* Centra la sección horizontalmente */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Hace que el campo ocupe todo el ancho del contenedor */
+    padding: 10px;
+    border: 1px solid #f5ebc1;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: #f5ebc1;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Cambia el color del botón al pasar el mouse */
+}
